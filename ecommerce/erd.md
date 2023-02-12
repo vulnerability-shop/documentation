@@ -4,15 +4,15 @@
 %%{init: { 'theme': 'default' } }%%
 
 erDiagram
-    User || -- }o Payment : "has"
-    User || -- }o Order  : "makes"
-    Order || -- || Payment : "has"
-    Order || -- }| OrderItem : "is made of"
-    Item || -- }o OrderItem : "is in"
+    Customer || -- }o Payment : "has"
+    Customer || -- }o Purchase  : "makes"
+    Purchase || -- || Payment : "has"
+    Purchase || -- }| PurchaseItem : "is made of"
+    Item || -- }o PurchaseItem : "is in"
     Item || -- }o CartItem : "is in"
-    User || -- }o CartItem : "has"
+    Customer || -- }o CartItem : "has"
 
-    User {
+    Customer {
         integer id PK
         VARCHAR256 email
         VARCHAR100 username
@@ -25,7 +25,7 @@ erDiagram
 
     Payment {
         integer id PK
-        integer user_id FK
+        integer customer_id FK
         integer cardNumber
         integer expMonth
         integer expYear
@@ -43,22 +43,22 @@ erDiagram
 
     CartItem {
         integer id PK
-        integer user_id FK
+        integer customer_id FK
         integer item_id FK
         integer item_quantity
     }
 
-    Order {
+    Purchase {
         integer id PK
-        integer user_id FK
+        integer customer_id FK
         integer payment_id FK
-        decimal order_cost
-        timestamp order_date
+        decimal purchase_cost
+        timestamp purchase_date
     }
 
-    OrderItem {
+    PurchaseItem {
         integer id PK
-        integer order_id FK
+        integer purchase_id FK
         integer item_id FK
         integer quantity
     }

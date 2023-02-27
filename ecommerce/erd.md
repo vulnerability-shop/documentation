@@ -21,6 +21,7 @@ erDiagram
         VARCHAR100 lastName
         VARCHAR256 address
         VARCHAR20 phoneNumber
+        integer role
     }
 
     Payment {

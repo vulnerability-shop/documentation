@@ -22,6 +22,7 @@ erDiagram
         VARCHAR256 address
         VARCHAR20 phoneNumber
         integer role
+        text image
     }
 
     Payment {

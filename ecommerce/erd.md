@@ -11,6 +11,8 @@ erDiagram
     Item || -- }o PurchaseItem : "is in"
     Item || -- }o CartItem : "is in"
     Customer || -- }o CartItem : "has"
+    Item || -- }o Review : "has"
+    Customer || -- }o Review  : "makes"
 
     Customer {
         integer id PK
@@ -63,5 +65,14 @@ erDiagram
         integer purchase_id FK
         integer item_id FK
         integer quantity
+    }
+
+    Review {
+        integer id PK
+        integer item_id FK
+        integer user_id FK
+        integer rating
+        text description
+        text image
     }
 ```

@@ -34,7 +34,7 @@ base route: [container_name]/api
 
 ## Purchase
 **Controller**: Purchase Controller
-- **Base Path**:[container-name]/
+- **Base Path**:[container-name]
 -  **Functions**:
    -  GetPurchases: GET/getPurchases
    -  GetPurchase: GET/getPurchase/[id]
@@ -42,7 +42,7 @@ base route: [container_name]/api
    -  PostPurchases: POST/addPurchase
 
 **Controller**: Purchase Item Controller
-- **Base Path**:[container-name]/
+- **Base Path**:[container-name]/item
 -  **Functions**:
    -  GetPurchaseItems: GET/getPurchaseItems
    -  GetPurchaseItem: GET/getPurchaseItem/[id]

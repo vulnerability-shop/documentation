@@ -36,15 +36,15 @@ base route: [container_name]/api
 **Controller**: Purchase Controller
 - **Base Path**:[container-name]
 -  **Functions**:
-   -  GetPurchases: GET/getPurchases
-   -  GetPurchase: GET/getPurchase/[id]
-   -  GetPurchasesForUser: GET/getPurchases/[id]
-   -  PostPurchases: POST/addPurchase
+   -  getPurchases: GET/getPurchases
+   -  getPurchaseById: GET/getPurchaseById/[id]
+   -  getPurchasesForUser: GET/getPurchasesForUser/[id]
+   -  addPurchase: POST/addPurchase
 
 **Controller**: Purchase Item Controller
 - **Base Path**:[container-name]/item
 -  **Functions**:
-   -  GetPurchaseItems: GET/getPurchaseItems
-   -  GetPurchaseItem: GET/getPurchaseItem/[id]
-   -  GetItemsForPurchase: GET/getItemsForPurchase/[id]
-   -  PostPurchaseItem: GET/addPruchaseItem
+   -  getPurchaseItems: GET/getPurchaseItems
+   -  getPurchaseItemById: GET/getPurchaseItemById/[id]
+   -  getPurchaseItemsForPurchase: GET/getPurchaseItemsForPurchase/[id]
+   -  addPruchaseItem: GET/addPruchaseItem

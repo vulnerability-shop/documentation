@@ -48,3 +48,14 @@ base route: [container_name]/api
    -  getPurchaseItemById: GET/getPurchaseItemById/[id]
    -  getPurchaseItemsForPurchase: GET/getPurchaseItemsForPurchase/[id]
    -  addPruchaseItem: GET/addPruchaseItem
+
+**Controller**: Item Review Controller
+- **Base Path**:[container-name]/review
+-  **Functions**:
+   - getReviews: GET/getReviews
+   - getReview: GET/getReview/[reviewId]
+   - getReviewsForItem: GET/getReviewsForItem/[itemId]
+   - postReview: POST/postReview
+   - getPictures: GET/getPictures/[reviewId]
+   - postPicture: POST/postPicture/[reviewId]
+   - getPicture: GET/getPicture/[pictureId]
